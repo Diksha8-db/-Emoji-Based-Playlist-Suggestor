@@ -1,0 +1,221 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background-image: linear-gradient( 109.6deg,  rgba(112,246,255,0.33) 11.2%, rgba(221,108,241,0.26) 42%, rgba(229,106,253,0.71) 71.5%, rgba(123,183,253,1) 100.2% );
+}
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom:2rem;
+    font-size:36px;
+}
+.container{
+    width:500px;
+    color:white;
+    background-image: linear-gradient( 104.1deg,  rgba(0,61,100,1) 13.6%, rgba(47,127,164,1) 49.4%, rgba(30,198,198,1) 93.3% );
+    margin:70px auto;
+    border-radius:10px;
+    padding:3rem 2rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    gap:1.5rem;
+    
+}
+#input-box{
+    background-color:white;
+    border:none;
+    border-radius:20px;
+    width:max-content;
+}
+#input-box select{
+    border:none;
+    width:max-content;
+    padding:12px;
+    background:transparent;
+    font-size:16px;
+    color:black;
+}
+#input-box select:focus{
+    border:none;
+    outline:none;
+}
+#input-box i{
+    color:rgb(156, 60, 86);
+    font-size:20px;
+    text-align: center;
+    padding: 10px;
+}
+button{
+    border: none;
+    outline: none;
+    font-size: 20px;
+    background-image: radial-gradient(circle 369px at -2.9% 12.9%, rgba(247, 234, 163, 1) 0%, rgba(236, 180, 238, 0.56) 46.4%, rgba(163, 203, 247, 1) 100.7%);
+    padding: 0.75rem;
+    border-radius: 30px;
+    margin-top:2rem;
+}
+button:hover{
+    opacity:0.7;
+    box-shadow:0px 0px 10px 5px rgb(80, 77, 77);
+}
+#emoji-sec{
+    display:grid;
+    justify-content:center;
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows:repeat(2,1fr);
+}
+.emoji{
+    border: none;
+    outline: none;
+    font-size: 40px;
+    background-image: radial-gradient(circle 369px at -2.9% 12.9%, rgba(247, 234, 163, 1) 0%, rgba(236, 180, 238, 0.56) 46.4%, rgba(163, 203, 247, 1) 100.7%);
+    padding: 0.75rem;
+    border-radius: 50%;
+    margin:1rem;
+}
+/*content-page*/
+ .contentContainer{
+    width:70%;
+    border-radius:30px;
+    color:white;
+    background-color:rgb(50, 46, 46);
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+    gap:2rem;
+    margin:50px auto;
+    padding:3rem;
+}
+.dancing-script{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    }
+    h1{
+    text-align:center;
+    font-size:38px;
+    }
+.happy{
+    width: 100vw;
+    height: 100vh;
+    background:linear-gradient(45deg,#f9ce34,#ee2a7b,#6228d7);
+}
+.sad{
+  width:100vw;
+  height:100vh;
+background: linear-gradient(45deg, #c7b7d3, #d3b9b7, #c3d3b7, #b7d1d3)
+}
+.chill{
+    width:100vw;
+    height:100vh;
+  background-image:url("partyBg.jpg");
+  background-size:cover;
+}
+.focussed{
+    width:100vw;
+    height:100vh;
+  background-image:url("focussed.webp");
+  background-size:cover;
+}
+
+.happyH2{
+    font-size:34px;
+    margin:1rem;
+    color:rgb(250, 165, 179);
+    text-align:center;
+    font-weight:200;
+}
+.sadH2{
+    font-size:34px;
+    margin:1rem;
+    color:rgb(231, 155, 155);
+    text-align:center;
+    font-weight:200;
+}
+.focussedH2{
+    font-weight:100;
+    color:#fcfffe;
+    font-family:'Times New Roman', Times, serif;
+    font-size:30px;
+    text-align:center;
+    margin:1rem;
+}
+.chillH2{
+    font-weight:100;
+    margin:1rem;
+    color:#e01717;
+    font-family:fantasy;
+    text-align:center;
+    font-size:30px;
+}
+.sadHeading{
+    font-weight:100;
+    color:#db026b;
+    font-family:sans-serif;
+    font-size:28px;
+}
+.focussedHeading{
+    font-weight:100;
+    color:#ecbd81;
+    font-family:sans-serif;
+    font-size:28px;
+}
+
+.chillheading{
+    font-weight:100;
+    color:#dea710;
+    font-family:monospace;
+    font-size:28px;
+}
+
+#playlist{
+display:flex;
+align-items:center;
+justify-content:center;
+flex-direction:column;
+gap:1rem;
+font-size:20px;
+}
+#playlist a{
+text-decoration:none;
+background-color:white;
+color:black;
+border-radius:30px;
+padding: 0.25rem 0.25rem 0.25rem 1rem;
+width:500px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+#playlist button{
+outline:none;
+border:none;
+background:linear-gradient(45deg,#f9ce34,#ee2a7b,#6228d7);
+color:black;
+border-radius:30px;
+font-size:18px;
+margin:0;
+}
+.contentContainer{
+ display:none;
+}
+.animateLeft{
+    animation: swap-screen 5s;
+    position:relative;
+}
+@keyframes swap-screen{
+    0%{
+        transform:translateX(-100%);
+    }
+    100%{
+        transform:translateX(0);
+    }
+}

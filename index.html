@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Mood Based Music Suggestion App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 style="font-family:serif;font-weight:100; font-size:40px">Playlist Suggestor</h1>
+        <div id="input-box">
+            <select id="InputBox">
+               <option  value="Happy">Happy 😊</option>
+               <option value="sad" >Sad 😔</option>
+               <option  value="chill">Chill 😎</option>
+               <option value="focussed">Focussed 🤓</option>
+            </select>
+            <i class="fa-solid fa-magnifying-glass" id="searchIcon"></i>
+        </div>
+        <div id="emoji-sec">
+            <button id="happy" class="emoji">😊</button>
+            <button id="sad"  class="emoji">😔</button>
+            <button id="chill" class="emoji">😎</button>
+            <button id="focussed" class="emoji">🤓</button>
+        </div>
+        <button id="SearchPlaylist">Search Playlist</button>
+    </div>
+
+<!--content page-->
+
+        <div class="contentContainer">
+            <h1 id="thought"></h1>
+            <audio autoplay id="backgroundAudio">
+                <source src="" type="audio/mpeg">
+            </audio>
+            <h2 id="head" ></h2>
+            <div id="playlist">
+                <a id="song1"></a>
+                <a id="song2"></a>
+                <a id="song3"></a>
+                <a id="song4"></a>
+                <a id="song5"></a>
+            </div>
+        </div>
+
+    
+</body>
+<script src="script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</html>
