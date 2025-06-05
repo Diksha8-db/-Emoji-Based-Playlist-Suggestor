@@ -14,7 +14,7 @@ Designed with modern HTML and CSS for an intuitive and aesthetic user experience
 ⚡ **No Login Required**
 Just type, tap, and vibe. It’s that easy.
 
-📸** Preview**
+📸 **Preview**
 ![playlist_suggestor](https://github.com/user-attachments/assets/dfe97c50-30af-4adc-952e-45c91f77f697)
 
 
