@@ -6,6 +6,9 @@ let focussed = document.getElementById("focussed");
 let selectInput = document.getElementById("InputBox");
 let searchBtn = document.getElementById("SearchPlaylist");
 let searchIcon = document.getElementById("searchIcon");
+let bodyElement = document.body;
+let bg = document.getElementById('video-bg')
+let bgVideo = document.getElementById("video-bg-src");
 
 happy.addEventListener("click", () => {
   selectInput.value = "Happy";
@@ -35,15 +38,21 @@ function playlist() {
   
 
   if (selectInput.value == "Happy") {
+
     $(contentDiv).fadeIn(5000);
-    body.classList.add("happy");
+    body.classList.add("all");
     thought.innerText =
       '"To be kind to all, to like many and love a few, to be needed and wanted by those we love, is certainly the nearest we can come to happiness."';
-    backgroundAudio.src = "happy.mp3";
+    backgroundAudio.src = "./assets/Audio/happy.mp3";
     backgroundAudio.load();
     backgroundAudio.play();
     head.innerText = "😊 Enjoy your day with this songs 😊";
     head.classList.add("happyH2", "pacifico-regular");
+    
+    bg.style.display = 'block';
+    bgVideo.src = "./assets/BackgroundVideo/happyBg.mp4"
+    bg.load()
+    bg.play()
 
     let happySongs = [
       "Tumse Hi Tumse",
@@ -67,15 +76,16 @@ function playlist() {
       ).innerHTML = `<p> ${happySongs[i]}</p><button>Play</button>`;
       document.getElementById(`song${i + 1}`).href = hrefs[i];
     }
+
   }
 
   if (selectInput.value == "sad") {
     $(contentDiv).slideDown(5000);
-    body.classList.add("sad");
+    body.classList.add("all")
     thought.innerText =
       '"The adventure of life is to learn. The purpose of life is to grow. The nature of life is to change. The challenge of life is to overcome. The essence of life is to care. The opportunity of like is to serve. The secret of life is to dare. The spice of life is to befriend. The beauty of life is to give."';
     thought.classList.add("sadHeading");
-    backgroundAudio.src = "sad.mp3";
+    backgroundAudio.src = "./assets/Audio/sad.mp3";
     backgroundAudio.load();
     backgroundAudio.play();
     head.innerText = "🤞 Don't worry..Everything will be fine 🤞";
@@ -84,7 +94,7 @@ function playlist() {
     let happySongs = [
       "Kar har maidan fateh",
       "Ziddi Dil",
-      "Shaabaashiyaan",
+      "Shabashiyaan",
       "Namo Namo ",
       "Bandeya Rey Bandeya",
     ];
@@ -97,6 +107,11 @@ function playlist() {
       "https://www.youtube.com/watch?v=Wj8C_bpnkTY",
     ];
 
+    bg.style.display = 'block';
+    bgVideo.src = "./assets/BackgroundVideo/sadBg.mp4"
+    bg.load()
+    bg.play()
+
     for (let i = 0; i < 5; i++) {
       document.getElementById(
         `song${i + 1}`
@@ -107,15 +122,16 @@ function playlist() {
 
   if (selectInput.value == "chill") {
     $(contentDiv).fadeTo(5000,0.9);
-    body.classList.add("chill");
+    body.classList.add("all");
     thought.innerText =
       '“There’s nothing more relaxing than genuine laughter with friends.”';
       thought.classList.add("chillheading");
-    backgroundAudio.src = "chill.mp3";
+    backgroundAudio.src = "./assets/Audio/chill.mp3";
     backgroundAudio.load();
     backgroundAudio.play();
     head.innerText = "😎 It's time for party!! 😎";
     head.classList.add("chillH2");
+    
 
     let happySongs = [
       "Abhi toh party suru huyi hai",
@@ -124,6 +140,11 @@ function playlist() {
       "Senorita",
       "Believer",
     ];
+
+    bg.style.display = 'block';
+    bgVideo.src = "./assets/BackgroundVideo/chillBg.mp4"
+    bg.load()
+    bg.play()
 
     let hrefs = [
       "https://www.youtube.com/watch?v=8LZgzAZ2lpQ",
@@ -146,11 +167,11 @@ function playlist() {
     $(contentDiv).addClass("animateLeft");
 
     contentDiv.style.backgroundColor = "#008B8B";
-    body.classList.add("focussed");
+    body.classList.add("all");
     thought.innerText =
       'Focus comes a lot more easily when you desperately want the results of your own work – nobody else is going to do it for you.”';
       thought.classList.add("focussedHeading");
-    backgroundAudio.src = "focussed.mp3";
+    backgroundAudio.src = "./assets/Audio/focussed.mp3";
     backgroundAudio.load();
     backgroundAudio.play();
     head.innerText = "It's your turn to rule the world";
@@ -159,17 +180,22 @@ function playlist() {
     let happySongs = [
       "Tibetian Bowl Sound",
       "OM Mantra",
-      "Har Har Mahadev",
-      "Tibetian Bowl Sound",
-      "OM Mantra",
+      "The Sound of Inner Peace",
+      "Focus Music for Study",
+      "Work Music",
     ];
+    
+    bg.style.display = 'block';
+    bgVideo.src = "./assets/BackgroundVideo/focussedBg.mp4"
+    bg.load()
+    bg.play()
 
     let hrefs = [
       "https://www.youtube.com/watch?v=0-g1zPWQPHk",
-      "https://www.youtube.com/watch?v=naVfm00sibE",
-      "https://www.youtube.com/watch?v=hA8MFZ76Jbc",
-      "https://www.youtube.com/watch?v=0-g1zPWQPHk",
-      "https://www.youtube.com/watch?v=naVfm00sibE",
+      "https://www.youtube.com/watch?v=ijfLsKg8jFY",
+      "https://www.youtube.com/watch?v=FTqrQsSIKR0",
+      "https://www.youtube.com/watch?v=_4kHxtiuML0&t=2s",
+      "https://www.youtube.com/watch?v=j8L6IvuYGOQ",
     ];
 
     for (let i = 0; i < happySongs.length; i++) {
