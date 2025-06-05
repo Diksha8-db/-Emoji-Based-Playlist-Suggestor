@@ -1,4 +1,4 @@
-A fun and interactive web app that suggests music playlists based on your mood—expressed entirely through emojis! 🎉 Whether you're feeling 😊, 😢, or 😎, we've got the perfect playlist ready for you.
+A fun and interactive web app that suggests music playlists based on your mood—expressed entirely through emojis! 🎉 Whether you're feeling 😊, 🤓, 😢, or 😎, we've got the perfect playlist ready for you.
 
 🔥 **Features**
 
@@ -43,16 +43,18 @@ Or use Live Server if you're working in VS Code for a smoother experience.
 
 **JavaScript (Vanilla)**
 
-✨ How It Works
+**jQuery**
+
+**✨ How It Works**
 The user inputs an emoji or selects one from a predefined list.
 
 JavaScript maps the emoji to a mood category (e.g., happy, sad, focussed, chilled).
 
 A matching playlist is shown based on that category—locally stored.
 
-🤝 Contributing
+**🤝 Contributing**
 Pull requests are welcome! If you'd like to contribute, feel free to fork the project and submit a PR.
 
 
-🧑‍💻 Author
+**🧑‍💻 Made with ❤️:**
 Diksha Bharti
