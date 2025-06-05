@@ -4,7 +4,8 @@
     box-sizing:border-box;
 }
 body{
-    background-image: linear-gradient( 109.6deg,  rgba(112,246,255,0.33) 11.2%, rgba(221,108,241,0.26) 42%, rgba(229,106,253,0.71) 71.5%, rgba(123,183,253,1) 100.2% );
+    width:100%;
+    background: linear-gradient( to right,  rgba(112,246,255,0.33) , rgba(221,108,241,0.26) , rgba(229,106,253,0.71) , rgba(123,183,253,1) );
 }
 .pacifico-regular {
     font-family: "Pacifico", cursive;
@@ -16,7 +17,7 @@ body{
 .container{
     width:500px;
     color:white;
-    background-image: linear-gradient( 104.1deg,  rgba(0,61,100,1) 13.6%, rgba(47,127,164,1) 49.4%, rgba(30,198,198,1) 93.3% );
+    background: linear-gradient( 104.1deg,  rgba(0,61,100,1) 13.6%, rgba(47,127,164,1) 49.4%, rgba(30,198,198,1) 93.3% );
     margin:70px auto;
     border-radius:10px;
     padding:3rem 2rem;
@@ -25,7 +26,6 @@ body{
     align-items:center;
     flex-direction: column;
     gap:1.5rem;
-    
 }
 #input-box{
     background-color:white;
@@ -55,14 +55,18 @@ button{
     border: none;
     outline: none;
     font-size: 20px;
-    background-image: radial-gradient(circle 369px at -2.9% 12.9%, rgba(247, 234, 163, 1) 0%, rgba(236, 180, 238, 0.56) 46.4%, rgba(163, 203, 247, 1) 100.7%);
+    background: radial-gradient(circle 369px at -2.9% 12.9%, rgba(247, 234, 163, 1) 0%, rgba(236, 180, 238, 0.56) 46.4%, rgba(163, 203, 247, 1) 100.7%);
     padding: 0.75rem;
     border-radius: 30px;
     margin-top:2rem;
+    font-weight: bold;
 }
 button:hover{
     opacity:0.7;
     box-shadow:0px 0px 10px 5px rgb(80, 77, 77);
+}
+#homeBtn{
+    margin-left:45%;
 }
 #emoji-sec{
     display:grid;
@@ -74,10 +78,28 @@ button:hover{
     border: none;
     outline: none;
     font-size: 40px;
-    background-image: radial-gradient(circle 369px at -2.9% 12.9%, rgba(247, 234, 163, 1) 0%, rgba(236, 180, 238, 0.56) 46.4%, rgba(163, 203, 247, 1) 100.7%);
+    background: radial-gradient(circle 369px at -2.9% 12.9%, rgba(247, 234, 163, 1) 0%, rgba(236, 180, 238, 0.56) 46.4%, rgba(163, 203, 247, 1) 100.7%);
     padding: 0.75rem;
     border-radius: 50%;
     margin:1rem;
+}
+h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight:100; 
+    font-size:40px
+}
+@media  screen and (max-width:426px) {
+    .container{
+        width:80%;
+        gap:1rem;
+    }
+    .emoji{
+        font-size:30px;
+        padding:0.5rem;
+    }
+    #SearchPlaylist{
+        margin-top:0;
+    }
 }
 /*content-page*/
  .contentContainer{
@@ -103,38 +125,20 @@ button:hover{
     text-align:center;
     font-size:38px;
     }
-.happy{
-    width: 100vw;
-    height: 100vh;
-    background:linear-gradient(45deg,#f9ce34,#ee2a7b,#6228d7);
-}
-.sad{
-  width:100vw;
-  height:100vh;
-background: linear-gradient(45deg, #c7b7d3, #d3b9b7, #c3d3b7, #b7d1d3)
-}
-.chill{
-    width:100vw;
-    height:100vh;
-  background-image:url("partyBg.jpg");
-  background-size:cover;
-}
-.focussed{
-    width:100vw;
-    height:100vh;
-  background-image:url("focussed.webp");
-  background-size:cover;
+.all{
+    width: 100%;
+    height: 100%;
 }
 
 .happyH2{
-    font-size:34px;
+    font-size:30px;
     margin:1rem;
     color:rgb(250, 165, 179);
     text-align:center;
     font-weight:200;
 }
 .sadH2{
-    font-size:34px;
+    font-size:30px;
     margin:1rem;
     color:rgb(231, 155, 155);
     text-align:center;
@@ -183,6 +187,7 @@ justify-content:center;
 flex-direction:column;
 gap:1rem;
 font-size:20px;
+flex-wrap: wrap;
 }
 #playlist a{
 text-decoration:none;
@@ -190,7 +195,7 @@ background-color:white;
 color:black;
 border-radius:30px;
 padding: 0.25rem 0.25rem 0.25rem 1rem;
-width:500px;
+width:90%;
 display:flex;
 justify-content:space-between;
 align-items:center;
@@ -204,6 +209,9 @@ border-radius:30px;
 font-size:18px;
 margin:0;
 }
+button:hover{
+    cursor: pointer;
+}
 .contentContainer{
  display:none;
 }
@@ -211,11 +219,46 @@ margin:0;
     animation: swap-screen 5s;
     position:relative;
 }
+#video-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    z-index: -1;
+    object-fit: cover;
+    display: none;
+  }
 @keyframes swap-screen{
     0%{
         transform:translateX(-100%);
     }
     100%{
         transform:translateX(0);
+    }
+}
+@media  screen and (max-width:768px){
+    .contentContainer{
+        width:90%;
+    }
+}
+@media  screen and (max-width:426px){
+    .contentContainer{
+        padding:1.5rem;
+        text-align:center;
+    }
+    .contentContainer h1{
+        font-size:20px;
+    }
+    #playlist a{
+        padding: 0.25em;
+        text-wrap: wrap;
+    }
+    #head{
+        font-weight:100 !important;
+        font-size: 30px !important;
+    }
+    #homeBtn{
+        margin-left:unset;
     }
 }
