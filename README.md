@@ -1,3 +1,5 @@
+## MOODIFY : Uplift your mood with tune
+
 A fun and interactive web app that suggests music playlists based on your mood—expressed entirely through emojis! 🎉 Whether you're feeling 😊, 🤓, 😢, or 😎, we've got the perfect playlist ready for you.
 
 🔥 **Features**
