@@ -20,6 +20,9 @@ Just type, tap, and vibe. It’s that easy.
 ![playlist_suggestor](https://github.com/user-attachments/assets/dfe97c50-30af-4adc-952e-45c91f77f697)
 
 
+👨‍💻**Deployment**
+
+https://moodify-playlist-suggestor.vercel.app/
 
 🚀 Getting Started
 1. Clone the repo
